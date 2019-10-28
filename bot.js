@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setPresence({ status: 'dnd' });
-client.user.setGame('Pornhub.com', { type: 'WATCHING' });
+client.user.setActivity('Pornhub.com', { type: 'WATCHING' });
 });
 
 client.on('message', message => {
