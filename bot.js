@@ -14,7 +14,9 @@ client.on('message', message => {
 	message.channel.send('A Walking Bot Who Don\'t Like **Hackers!!**.');
         } else if (message.content === '!hack') {
 	message.channel.send('Download link - https://mega.nz/#!EFVDiShA!Oy_w9pO8HSpJiGC83Xz3W0JifmKXjjD_GmzGAotmoZA');
-   }
+        } else if (message.content === '!invite') {
+	message.channel.send('Here is the ivite link - https://discord.gg/72WFhw3');
+	}
 });
 
 // THIS  MUST  BE  THIS  WAY
