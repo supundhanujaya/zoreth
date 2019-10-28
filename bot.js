@@ -4,6 +4,9 @@ const client = new Discord.Client();
 client.on('ready', () => {
     client.user.setPresence({ status: 'dnd' });
 });
+client.on('ready', () => {
+client.user.setActivity('Pornhub.com', { type: 'WATCHING' });
+});	
 
 
 client.on('message', message => {
