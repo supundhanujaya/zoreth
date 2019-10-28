@@ -21,11 +21,6 @@ client.on('message', message => {
 client.login(process.env.BOT_TOKEN);
 
 // Kick a member
-// Import the discord.js module
-const Discord = require('discord.js');
-
-// Create an instance of a Discord client
-const client = new Discord.Client();
 
 /**
  * The ready event is vital, it means that only _after_ this will your bot start reacting to information
