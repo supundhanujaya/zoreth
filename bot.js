@@ -12,7 +12,10 @@ client.on('message', message => {
     	message.reply('pong');
   	} else if (message.content === `lakitha`) {
 	message.channel.send('A Walking Bot Who Don\'t Like **Hackers!!**.');
-}
+        } else if (message.content === '!hack') {
+	message.channel.send('Download link
+
+https://mega.nz/#!EFVDiShA!Oy_w9pO8HSpJiGC83Xz3W0JifmKXjjD_GmzGAotmoZA');	
 });
 
 // THIS  MUST  BE  THIS  WAY
