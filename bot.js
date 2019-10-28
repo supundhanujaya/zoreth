@@ -73,3 +73,32 @@ client.on('message', message => {
   }
 });
 
+ //reactions
+
+const emojiChannelID = '612772262726205542';
+client.on('ready', async () => {
+  try {
+    const channel = client.channels.get(emojiChannelID);
+    if (!channel) return console.error('Invalid ID or missing channel.');
+
+    const messages = await channel.fetchMessages({ limit: 100 });
+
+    for (const [id, message] of messages) {
+      await message.react('✅');
+      await message.react('✖');
+    }
+  } catch(err) {
+    console.error(err);
+  }
+});
+client.on('message', async message => {
+  if (message.channel.id === emojiChannelID) {
+    try {
+      await message.react('✅');
+      await message.react('✖');
+    } catch(err) {
+      console.error(err);
+    }
+  }
+});
+
