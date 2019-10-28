@@ -9,7 +9,9 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
-  	}
+  	}} else if (message.content === `lakitha`) {
+	message.channel.send('A Walking Bot Who Don\'t Like **Hackers!!**.');
+}
 });
 
 // THIS  MUST  BE  THIS  WAY
