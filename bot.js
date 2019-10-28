@@ -96,6 +96,7 @@ client.on('message', async message => {
     try {
       await message.react('✅');
       await message.react('✖');
+      await message.react('🖕')    
     } catch(err) {
       console.error(err);
     }
